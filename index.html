@@ -41,6 +41,20 @@
     .link-btn:hover {
       background: #c79c72;
     }
+    
+    /* 🔥 Shake animation */
+    @keyframes shake {
+      0% { transform: translateX(0); }
+      20% { transform: translateX(-3px); }
+      40% { transform: translateX(3px); }
+      60% { transform: translateX(-3px); }
+      80% { transform: translateX(3px); }
+      100% { transform: translateX(0); }
+    }
+
+    .shake-btn {
+      animation: shake 1s infinite;
+    }
   </style>
   <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-5GG41FJ1YT"></script>
@@ -65,7 +79,7 @@
     <h6 class="text-muted mb-4">@Girlsclub</h6>
 
     <!-- Instagram Button -->
-    <a href="https://www.instagram.com/girls_club_img_video" target="_blank" class="btn link-btn w-100">
+    <a href="https://www.instagram.com/girls_club_img_video" target="_blank" class="btn shake-btn link-btn w-100">
       Instagram ❤️
     </a>
 
